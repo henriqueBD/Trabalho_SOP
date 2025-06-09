@@ -1,11 +1,11 @@
 #!/bin/bash
 
-source op
+source op.sh
 
 while true; do
     clear
     
-    cat tabela1
+    cat tabela1.txt
     
     # obter o ano
     ano=$(date +%Y)
@@ -19,9 +19,9 @@ while true; do
       semestre=2
     fi
     
-    echo "${semestre}º Semestre de ${ano}"
+    echo "# ${semestre}º Semestre de ${ano}                                      #"
     
-    cat tabela2
+    cat tabela2.txt
 
     #obtem a data e hora formatados
     DATA=$(date +"%d/%m/%Y")
@@ -30,7 +30,7 @@ while true; do
     echo "Rio de Janeiro \"$DATA\". \"$HORA\"."
 
     # exibe o menu de escolhas
-    cat menu_escolhas
+    cat menu_escolhas.txt
     read -rp "Escolha uma opção: " OPCAO
 
     # executa comando com base na escolha do usuario

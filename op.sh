@@ -92,11 +92,7 @@ op4(){
         return
     fi
     
-    # definir senha
-    read -rp "Deseja definir uma senha para o usuário agora? (s/n): " DEFINIR_SENHA
-    if [[ "$DEFINIR_SENHA" =~ ^[Ss]$ ]]; then
-        passwd "$NOVO_USUARIO"
-    fi
+    
     
     
     usermod -aG sudo "$NOVO_USUARIO"

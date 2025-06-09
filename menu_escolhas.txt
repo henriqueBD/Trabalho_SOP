@@ -1,1 +1,6 @@
-Menu escolhas
+Menu de Escolhas:
+   1) Opção 1
+   2) Opção 2
+   3) Opção 3
+   4) Opção 4
+   5) Finalizar o Script
